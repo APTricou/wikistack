@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended:false}));
 app.use(express.static(__dirname + '/static'));
 app.use(express.json())
 app.use('/wiki', wiki); // allows us to use the middleware routed to use through wiki - has built in next()
-//app.use('/user', user);
+app.use('/users', user);
 
 app.get('/', async (req, res)=>{
     res.redirect('/wiki');

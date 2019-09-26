@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { addPage, editPage, main, userList, userPages, wikiPage } = require('../views/index')
+const { addPage, editPage, main, wikiPage } = require('../views/index')
 const { Page, User } = require("../models");
 
 
